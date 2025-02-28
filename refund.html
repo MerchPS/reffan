@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Refund - Generich Refund System</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Generich Refund System</h1>
+    </header>
+
+    <main>
+        <h2>Refund Request Form</h2>
+        <form id="refundForm" action="php/submit_refund.php" method="POST" enctype="multipart/form-data">
+            <label for="nickname">Nickname in Game:</label>
+            <input type="text" id="nickname" name="nickname" required>
+
+            <label for="description">Refund Description:</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+
+            <label for="proof">Upload Proof of Payment (Max 5MB):</label>
+            <input type="file" id="proof" name="proof" accept="image/*" required>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </main>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
