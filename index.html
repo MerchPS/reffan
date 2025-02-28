@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generich Refund System</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Title Bar -->
+    <header>
+        <h1>Generich Refund System</h1>
+        <button id="adminBtn">Admin Panel</button>
+    </header>
+
+    <!-- Admin Login Popup -->
+    <div id="adminPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="adminForm">
+                <label for="userAdmin">User Admin:</label>
+                <input type="text" id="userAdmin" name="userAdmin" required>
+                <label for="passwordAdmin">Password Admin:</label>
+                <input type="password" id="passwordAdmin" name="passwordAdmin" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Refund Role Dropdown -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#" id="refundRole">Refund Role</a>
+                <ul class="dropdown">
+                    <li><a href="refund.html">Request Refund</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
